@@ -1,0 +1,9 @@
+version: '2'
+services:
+  modular-nginx:
+    build: .
+    image: qotoorg/modular-nginx:latest
+    container_name: swarm-proxy
+    ports:
+      - "8080:80"
+      - "4430:443"
